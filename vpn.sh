@@ -14,7 +14,6 @@ echo "Creation du client OpenVPN: $REPONSE"
 source vars
 ./build-key $REPONSE
 
-
 sudo mkdir /etc/openvpn/clientconf/$REPONSE
 sudo cp /etc/openvpn/ca.crt /etc/openvpn/ta.key keys/$REPONSE.crt keys/$REPONSE.key /etc/openvpn/clientconf/$REPONSE
 
